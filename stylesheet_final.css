@@ -1,0 +1,330 @@
+/* 웹 폰트 설정 */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  gap: 40px;
+}
+
+.image-container {
+  padding: 1%;
+  width: 100%;
+  max-width: 30%;
+  text-align: center;
+  align-items: center;
+}
+
+
+.profile-photo {
+  width: 100%;
+  padding-top: 100%; /* 1:1 비율을 유지하기 위해 */
+  background-image: url('images/try3.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+}
+
+.teaching-img img {
+  width: 100%;
+  display: block;
+}
+
+.container2 {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.research .container2 {
+  border-bottom: 1px solid #ddd;
+}
+
+.column-img {
+  width: 100%;
+  max-width: 20%;
+  flex: 0 0 20%;
+  text-align: center;
+}
+
+.left-text {
+  width: 100%;
+}
+
+.video-container {
+  position: relative;
+  width: 100%; /* 또는 다른 크기 */
+  height: auto;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  z-index: 1; /* 이미지 위에 비디오가 보이도록 z-index 설정 */
+}
+
+.video-container img {
+  position: relative;
+  width: 100%;
+  display: block;
+  z-index: 0;
+}
+
+.papertitle {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.item p, .title p, .title, .date, .sub-list li, .column-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  flex: 1;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.date {
+  flex: 0 1 auto;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.sub-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.sub-list li {
+  margin-bottom: 5px;
+}
+
+/* 기본 스타일 */
+body, td, th, tr, p, a, strong, h2, h3 .papertitle, .name {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+}
+
+footer {
+  margin-top: auto; /* footer를 맨 아래로 고정 */
+  padding: 10px;
+  text-align: center;
+  font-size:small;
+}
+
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 100vh;
+  text-align: left;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 960px;
+  padding: 0 48px;
+  margin: 40px auto;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus, a:hover, .papertitle:focus, .papertitle:hover {
+  color: #f09228;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+.section h2{
+  margin-bottom: 10px;
+}
+
+.section h3{
+  margin-bottom: 7px;
+}
+
+/* 기본 텍스트 크기 */
+body, p, a, .papertitle {
+  font-size: 15px;
+}
+
+strong, .papertitle {
+  font-weight: 700;
+}
+
+h1 {
+  margin-top: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.PA-p p{
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+}
+
+span.highlight, .container2.highlight {
+  background-color: #ffffd0;
+}
+
+.organ {
+  max-width: 100%;
+  text-align: center;
+}
+
+/* 반응형 디자인을 위한 미디어 쿼리 */
+
+/* 태블릿 이하 */
+@media (max-width: 768px) {
+  body{
+    margin: 20px;
+    padding: 0 12px;
+    gap: 40px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 10px;
+  }
+
+body, p, a, .papertitle{
+    font-size: 13px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .container2 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+
+  .reviewr {
+    flex-direction: column;
+    display:contents;
+    max-width: 100%;
+  }
+
+  .image-container, .column-img {
+    width: 100%;
+    max-width: 240px; /* 이미지 컨테이너의 최대 폭을 제한 */
+    text-align: center; /* 텍스트와 링크를 중앙 정렬 */
+  }
+
+
+  .profile-photo {
+    width: 100%; /* 프로필 사진을 컨테이너 너비에 맞춤 */
+    padding-top: 100%; /* 1:1 비율 */
+    background-size: cover; /* 배경 이미지가 div 크기에 맞게 조절 */
+    background-position: center; /* 배경 이미지를 중앙에 위치 */
+    background-repeat: no-repeat;
+  }
+
+  .item {
+    flex-direction: column-reverse;
+  }
+}
+
+/*중간점*/
+@media (min-width: 769px) and (max-width: 1023px) {
+
+  .container {
+    gap: 32px;
+  }
+
+  .image-container, .column-img {
+    max-width: 30%;
+  }
+}
