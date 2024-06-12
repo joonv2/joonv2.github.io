@@ -51,7 +51,7 @@
 .profile-photo {
   width: 100%;
   padding-top: 100%; /* 1:1 비율을 유지하기 위해 */
-  background-image: url('https://github.com/joonv2/joonv2.github.io/tree/main/images/try3.jpg');
+  background-image: url('images/try3.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 50%;
